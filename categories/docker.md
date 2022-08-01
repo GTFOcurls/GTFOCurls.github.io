@@ -35,4 +35,19 @@
           -H 'Accept: application/vnd.docker.distribution.manifest.v1+json' \
           "http://<registry:port>/v2/<IMAGENAME>/manifests/<DIGEST|TAG>"
       }
+    - {
+        description: Get minifests for an image using autorization token
+        command: |
+          curl -s -H "Authorization: Bearer $token" "https://registry.hub.docker.com/v2/<REPOSITORY>/<IMAGE>/manifests/latest
+      }
+    - {
+        description: Get authorization token to be used by registry
+        command: |
+          curl -s "https://auth.docker.io/token?service=registry.docker.io&scope=repository:<REPOSITORY>/<IMAGE>:pull"
+      }
+    - {
+        description: Get minifests using autorization token
+        command: |
+          curl -s -H "Authorization: Bearer $token" "https://registry.hub.docker.com/v2/<REPOSITORY>/<IMAGE>/manifests/latest
+      }
 ---
