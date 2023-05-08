@@ -14,8 +14,8 @@ index_categories:
 # Home recommended posts
 index_recommends:
   - basics
-  - cloudflare
   - docker
+  - cloudflare
   - nginx
 #  - go
 #  - vim
