@@ -3,7 +3,7 @@
         <% let post = site.posts.findOne({slug: filePath}); %>
         <a href="<%= url_for(post.path) %>">
             <div class="card <%= post.background %>">
-                <%- icon(post.slug) %>
+                <%- icon(post.slug, post.icon) %>
                 <p><%= post.title %></p>
             </div>
         </a>
