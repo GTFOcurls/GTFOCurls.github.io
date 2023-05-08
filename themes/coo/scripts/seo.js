@@ -48,10 +48,10 @@ hexo.extend.helper.register("page_keywords", function () {
 
 hexo.extend.helper.register("page_image", function () {
     let homePng = "preview.png";
-    let postPng = "";
-    if (this.is_post()) {
-        postPng = `${this.page.slug}-preview.png`;
-    }
+    let postPng = "preview.png";
+    //if (this.is_post()) {
+    //    postPng = `${this.page.slug}-preview.png`;
+    //}
 
     let version = (Math.random() + 1).toString(36).substring(7);
     let imageURL;
