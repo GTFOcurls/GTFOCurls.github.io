@@ -1,14 +1,12 @@
 [
  {
-    "icon": "icon-curl",
-    "title": "Curl",
-    "path": "basics.html",
-    "background": "bg-[#d33731]"
+    "icon": "curl",
+    "title": "Basics",
+    "path": "basics.html"
   },
   {
-    "icon": "icon-docker",
+    "icon": "docker",
     "title": "Docker",
-    "path": "docker.html",
-    "background": "bg-[#d33731]"
+    "path": "docker.html"
   }
 ]

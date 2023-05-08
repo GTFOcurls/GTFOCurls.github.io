@@ -1,8 +1,7 @@
 ---
 title: Cloudflare
 date: {{ date }}
-icon: icon-cloudflare
-background: bg-blue-400
+background: bg-[#3e4548]
 tags:
     - clourflare
     - api

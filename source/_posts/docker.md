@@ -1,8 +1,7 @@
 ---
 title: Docker
 date: {{ date }}
-icon: icon-docker
-background: bg-blue-400
+background: bg-[#488fdf]
 tags:
     - docker
     - api

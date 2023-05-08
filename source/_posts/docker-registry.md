@@ -1,8 +1,8 @@
 ---
 title: Docker Registry
 date: {{ date }}
-icon: icon-docker
-background: bg-blue-600
+background: bg-gradient-to-l from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500
+icon: docker
 tags:
     - docker
     - registry

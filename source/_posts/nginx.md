@@ -1,8 +1,7 @@
 ---
 title: NGiNX
 date: {{ date }}
-icon: icon-curl
-background: bg-blue-400
+background: bg-gradient-to-r from-green-900 via-green-600 to-green-400 hover:from-green-900 hover:via-green-700 hover:to-green-500
 tags:
 - nginx
 - tips
