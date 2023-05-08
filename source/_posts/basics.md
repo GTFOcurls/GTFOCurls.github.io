@@ -16,25 +16,25 @@ Curl Basics
 ---------------
 
 ### Get header
-```shell script {.wrap}
-curl -i <URL>
+```shell script
+$ curl -i <URL>
 ```
 
 ### Follow redirects
-```shell script {.wrap}
-curl -L <URL>
+```shell script
+$ curl -L <URL>
 ```
 
 ### Ignore ssl error
-```shell script {.wrap}
-curl -k <URL>
+```shell script
+$ curl -k <URL>
 ```
 
 ### Specific HTTP Method
-```shell script {.wrap}
-curl -XPOST <URL>
-curl -XPUT <URL>
-curl -XDELETE <URL>
+```shell script
+$ curl -XPOST <URL>
+$ curl -XPUT <URL>
+$ curl -XDELETE <URL>
 ```
 
 Set values
