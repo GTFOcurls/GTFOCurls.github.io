@@ -7,8 +7,8 @@
     "dev:hexo": "npx hexo clean && npx hexo server",
     "dev:css": "npx postcss themes/coo/source/css/style.tailwindcss -o themes/coo/source/css/style.css --watch",
     "build": "run-s build:*",
-    "build:clean": "npx hexo clean",
     "build:rm-db.json": "rm db.json || exit 0",
+    "build:clean": "npx hexo clean",
     "build:css": "npx postcss themes/coo/source/css/style.tailwindcss -o themes/coo/source/css/style.css",
     "build:generate": "npx hexo generate",
     "build:gulp": "npx gulp --max-old-space-size=4096"
