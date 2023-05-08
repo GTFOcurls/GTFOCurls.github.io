@@ -1,0 +1,43 @@
+# Limit on the number of recent articles
+recent_posts_limits: 2
+
+# The categories and order displayed on the home page
+index_categories:
+  - Linux Command
+  - Docker
+  - API
+  - Exploits
+  - CVE
+#  - Keyboard Shortcuts
+#  - Other
+
+# Home recommended posts
+index_recommends:
+  - basics
+  - cloudflare
+  - docker
+  - nginx
+#  - go
+#  - vim
+#  - regex
+#  - awk
+
+
+# Related popular posts
+# Dependencies: https://github.com/tea3/hexo-related-popular-posts
+related_posts:
+  enable: true
+  title: Related
+  params:
+    maxCount: 4
+    #PPMixingRate: 0.0
+    #isDate: false
+    #isImage: false
+    #isExcerpt: false
+
+top_posts:
+  enable: true
+  title: Top
+  params:
+    maxCount: 2
+    PPMixingRate: 1.0

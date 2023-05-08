@@ -1,2 +1,7 @@
 # GTFOCurls.gihub.io
 GTFOCurls is a curated list of cURL commands that can be used to exploit CVE vulnerabilities or communicate with _exotic_ services
+
+
+
+## Credits
+Many thanks to https://github.com/Fechin/reference | this site is heavily based upon.
