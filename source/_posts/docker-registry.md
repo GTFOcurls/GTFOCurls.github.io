@@ -15,17 +15,23 @@ intro: Communicate with docker registry
 Docker Registry
 ---------------
 
-## Get current catalog
+### Get current catalog
 ```shell script {.wrap}
 curl http://<registry:port>/v2/_catalog
 ```
 
-## Get image tags
+### Get image tags
 ```shell script {.wrap}
-curl http://<registry:port>/v2/<IMAGENAME>/tags/list
+curl http://<registry:port>/v2/<IMAGE>/tags/list
 ```
 
-## Get manifests
+### Get minifests for an image using autorization token
+```shell script {.wrap}
+curl -H "Authorization: Bearer $token" \
+  "https://registry.hub.docker.com/v2/<REPOSITORY>/<IMAGE>/manifests/latest
+```
+
+### Get manifests {.col-span-2}
 ```shell script {.wrap}
 curl -fsSL \
 -H 'Accept: application/vnd.docker.distribution.manifest.v2+json' \
@@ -34,17 +40,13 @@ curl -fsSL \
 "http://<registry:port>/v2/<IMAGENAME>/manifests/<DIGEST|TAG>"
 ```
 
-## Get minifests for an image using autorization token
+
+### Get authorization token to be used by registry
 ```shell script {.wrap}
-curl -s -H "Authorization: Bearer $token" "https://registry.hub.docker.com/v2/<REPOSITORY>/<IMAGE>/manifests/latest
+curl "https://auth.docker.io/token?service=registry.docker.io&scope=repository:<REPOSITORY>/<IMAGE>:pull"
 ```
 
-## Get authorization token to be used by registry
-```shell script {.wrap}
-curl -s "https://auth.docker.io/token?service=registry.docker.io&scope=repository:<REPOSITORY>/<IMAGE>:pull"
-```
-
-## Get minifests using autorization token
+### Get minifests using autorization token
 ```shell script {.wrap}
 curl -s -H "Authorization: Bearer $token" "https://registry.hub.docker.com/v2/<REPOSITORY>/<IMAGE>/manifests/latest
 ```

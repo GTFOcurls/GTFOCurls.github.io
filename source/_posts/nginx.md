@@ -15,7 +15,7 @@ plugins:
 nginx
 -----
 
-## Access nginx `location` that is defined as `internal`
+### Access `internal` location {.col-span-2}
 ```shell script {.wrap}
 curl -H "X-Accel-Redirect: /internal_only/file" http://HOST/
 ```
