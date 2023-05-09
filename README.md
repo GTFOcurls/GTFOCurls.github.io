@@ -25,6 +25,6 @@ GTFOCurls is a curated list of cURL commands that can be used to exploit CVE vul
 └── themes
     └── coo      # Theme files
 ```
-source/ga_analytics_tops.json
+
 ## Credits
 Many thanks to https://github.com/Fechin/reference | this site is heavily based upon.
